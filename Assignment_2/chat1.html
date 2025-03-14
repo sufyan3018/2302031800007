@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One More Tree Foundation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        html, body {
+            height: 100%;
+            background-color: #FFF6E6;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: #107C10;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 30px; /* Increased padding to make header thicker */
+            height: 100px;
+        }
+
+        .logo img {
+            height: 60px; /* Bigger logo */
+        }
+
+        nav a {
+            text-decoration: none;
+            background-color: #00A000;
+            color: white;
+            padding: 12px 20px; /* Bigger buttons */
+            border-radius: 6px;
+            margin-left: 12px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            background-color: #008000;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropbtn {
+            padding: 12px 20px;
+            background-color: #00A000;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 16px;
+            color: white;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 200px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+            border-radius: 6px;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Main Section Grid */
+        .content-grid {
+            flex: 1;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            padding: 40px;
+        }
+
+        .content-box {
+            background-color: #FFB870;
+            padding: 30px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            min-height: 180px; /* Increased height */
+        }
+
+        .content-box img {
+            width: 70px;
+            height: 70px;
+        }
+
+        .content-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .content-text h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .content-text p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+
+        .content-text div {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Space between buttons */
+    margin-top: 10px;
+}
+
+.content-text button {
+    background: linear-gradient(135deg, #FFD700, #FFA500);
+    border: none;
+    padding: 12px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    border-radius: 25px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    min-width: 120px; /* Ensuring consistent button width */
+}
+
+.content-text button:hover {
+    background: linear-gradient(135deg, #FFA500, #FF4500);
+    transform: scale(1.1);
+    box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+
+        /* Footer */
+        footer {
+            background-color: #107C10;
+            color: white;
+            padding: 30px 40px; /* Thicker footer */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            font-size: 15px;
+        }
+
+        .social-icons img {
+            width: 30px;
+            height: 30px;
+            margin-left: 15px;
+        }
+        /* Apply scale-up effect to the body */
+body {
+    animation: scaleUpAnimation 0.8s ease-in-out;
+}
+
+@keyframes scaleUpAnimation {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="logo.png" alt="One More Tree Foundation Logo">
+    </div>
+    <nav>
+        <a href="chat1.html">Home</a>
+        <div class="dropdown">
+            <span class="dropbtn">About Us ▾</span>
+            <div class="dropdown-content">
+                <a href="chat4.html">About Foundation</a>
+                <a href="chat5.html">Our Mission</a>
+                <a href="chat8.html">Articles</a>
+                <a href="chat7.html">Community Led Intiatives</a>
+            </div>
+        </div>
+        <a href="chat6.html">Contact</a>
+        <a href="chat2.html">Profile</a>
+        <a href="#">Search</a>
+    </nav>
+</header>
+
+<section class="content-grid">
+
+    <div class="content-box">
+        <div class="content-text">
+            <h2>Plant tree with us</h2>
+            <p>Join our initiative and plant a tree in Poland and Europe! Plant a tree on your own or involve your company in CSR activities and tree planting.</p>
+            <div>
+                <a href="https://one-more-tree.org/tree-planting-for-business/">
+                <button>Business</button>
+                </a>
+                <a href="https://one-more-tree.org/plant-a-tree/">
+                <button>Individual</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-box">
+        <img src="010-love.png" alt="Corporate Volunteering Icon">
+        <div class="content-text">
+            <h2>Corporate volunteering</h2>
+            <p>Involve your team in environmental activities.</p>
+            <a href="https://one-more-tree.org/for-business/">
+            <button>Volunteering</button>
+            </a>
+        </div>
+    </div>
+
+    <div class="content-box">
+        <img src="004-botanic.png" alt="Education Icon">
+        <div class="content-text">
+            <h2>Ecological Education</h2>
+            <p>Check out how we’re building environmental awareness.</p>
+            <a href="https://one-more-tree.org/for-business/">
+            <button>Workshops</button>
+            </a>
+        </div>
+    </div>
+
+    <div class="content-box">
+        <img src="015-forest-58x58.png" alt="Donate Icon">
+        <div class="content-text">
+            <h2>Donate for tree plantation</h2>
+            <p>Make a donation for planting new trees.</p>
+            <a href="https://one-more-tree.org/plant-a-tree/">
+            <button>Donate</button>
+            </a>
+        </div>
+    </div>
+
+</section>
+
+<footer>
+    <div>
+        <strong>One More Tree Foundation</strong><br>
+        Address: Aleja Zjednoczenia 17/U-1<br>
+        01-829 Warsaw, Poland
+    </div>
+    <div>
+        Mobile: +48 883 622 887<br>
+        Email: info@one-more-tree.org
+    </div>
+    <div class="social-icons">
+        <a href="#"><img src="icons8-facebook-logo-50.png" alt="Facebook"></a>
+        <a href="#"><img src="icons8-twitter-logo-50.png" alt="Twitter"></a>
+        <a href="#"><img src="icons8-instagram-logo-30.png" alt="Instagram"></a>
+        <a href="#"><img src="icons8-linkedin-circled-50.png" alt="LinkedIn"></a>
+    </div>
+</footer>
+
+</body>
+</html>
