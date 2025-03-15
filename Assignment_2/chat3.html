@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article - One More Tree Foundation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #107C10;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+        }
+        header .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        header .logo img {
+            height: 40px;
+        }
+        header nav a {
+            text-decoration: none;
+            background-color: #00A000;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 4px;
+            margin-left: 10px;
+        }
+        header nav a:hover {
+            background-color: #008000;
+        }
+        main {
+            padding: 30px;
+        }
+        h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .article-content {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+        }
+        .article-content img {
+            width: 45%;
+            max-width: 400px;
+            border-radius: 5px;
+        }
+        .article-text {
+            width: 50%;
+            max-width: 500px;
+            text-align: justify;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        footer {
+            background-color: #107C10;
+            color: white;
+            padding: 20px 30px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            font-size: 14px;
+        }
+        footer div {
+            margin: 5px 0;
+        }
+        footer a {
+            color: white;
+            margin-left: 10px;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        .social-icons {
+            display: flex;
+            gap: 10px;
+        }
+        .social-icons a img {
+            width: 24px;
+            height: 24px;
+        }
+        @media (max-width: 768px) {
+            .article-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            .article-content img, .article-text {
+                width: 100%;
+            }
+        }
+        .nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav a, .dropbtn {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #21a121;
+    margin: 0 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.nav a:hover, .dropbtn:hover {
+    background-color: #009f00;
+}
+
+/* Dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 180px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Dropdown links */
+.dropdown-content a {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Hover effect on dropdown links */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+body {
+    animation: rotateIn 0.8s ease-in-out;
+}
+
+@keyframes rotateIn {
+    from {
+        transform: rotate(-10deg);
+        opacity: 0;
+    }
+    to {
+        transform: rotate(0);
+        opacity: 1;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="logo.png" alt="Tree Logo">
+    </div>
+    <nav>
+        <a href="chat1.html">Home</a>
+        <div class="dropdown">
+            <a href="#" class="dropbtn">About Us ▾</a>
+            <div class="dropdown-content">
+                <a href="chat4.html">About Foundation</a>
+                <a href="chat5.html">Our Mission</a>
+                <a href="chat8.html">Articles</a>
+                <a href="chat7.html">Community Led Intiatives</a>
+
+            </div>
+        </div>
+        <a href="chat6.html">Contact</a>
+        <a href="chat2.html">Profile</a>
+        <a href="#">Search</a>
+    </nav>
+</header>
+
+<main>
+    <h1>Sustainable Sustenance At 1 Hotel San Francisco’s Terrene Restaurant</h1>
+    <div class="article-content">
+        <img src="sanfransico.webp" alt="Restaurant Interior">
+        <div class="article-text">
+            <p>
+                The words sustainability and seasonality are thrown around a lot in the culinary space, but at 1 Hotel’s new signature restaurant, Terrene, these are two elements that are key to their guiding practices of zero-waste, eco-friendly practices, and farm-to-table ethos.
+            </p>
+            <p>
+                Drawing inspiration from the Bay Area’s renowned legacy of culinary innovation, Terrene utilizes ingredients sourced within a 100-mile radius for many dishes and cocktails. Inspired by the locality of San Francisco, the menu is rooted in an abundance of local, fresh, organic, and sustainably-sourced ingredients.
+            </p>
+            <p>
+                “We focus on seasonal, small plates that reflect the refinement and natural simplicity of 1 Hotels,” explains Chef Scott Koranda. “We’re so lucky to have an incredible abundance of fresh, local ingredients nearby. This is one of the many reasons I was excited to relocate to San Francisco and work on the opening of Terrene at 1 Hotel San Francisco.”
+            </p>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div>
+        <strong>One More Tree Foundation</strong><br>
+        Address: Aleja Zjednoczenia 17/U-1<br>
+        01-829 Warsaw, Poland
+    </div>
+    <div>
+        Mobile: +48 883 622 887<br>
+        Email: info@one-more-tree.org
+    </div>
+    <div class="social-icons">
+        <a href="#"><img src="icons8-facebook-logo-50.png" alt="Facebook"></a>
+        <a href="#"><img src="icons8-twitter-logo-50.png" alt="Twitter"></a>
+        <a href="#"><img src="icons8-instagram-logo-30.png" alt="Instagram"></a>
+        <a href="#"><img src="icons8-linkedin-circled-50.png" alt="LinkedIn"></a>
+    </div>
+</footer>
+
+</body>
+</html>

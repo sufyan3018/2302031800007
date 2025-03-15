@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - One More Tree Foundation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #E8F8E8;
+        }
+        header {
+            background-color: #15803D;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+        }
+        header .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        header .logo img {
+            height: 40px;
+        }
+        header nav a {
+            text-decoration: none;
+            background-color: #00A000;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 4px;
+            margin-left: 10px;
+        }
+        header nav a:hover {
+            background-color: #008000;
+        }
+        main {
+            padding: 30px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+        h2 {
+            margin: 5px 0 15px 0;
+            font-weight: bold;
+        }
+        p {
+            max-width: 800px;
+            margin: 0 auto 20px auto;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .content {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .content img {
+            width: 300px;
+            border-radius: 5px;
+        }
+        .activity-box {
+            background-color: #C8F0C8;
+            padding: 20px;
+            text-align: left;
+            border-radius: 5px;
+            width: 450px;
+        }
+        .activity-box h3 {
+            margin: 0;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .activity-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+        .activity-item img {
+            width: 30px;
+            height: 30px;
+        }
+        footer {
+            background-color: #15803D;
+            color: white;
+            padding: 20px 30px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            font-size: 14px;
+        }
+        footer div {
+            margin: 5px 0;
+        }
+        footer a {
+            color: white;
+            margin-left: 10px;
+            text-decoration: none;
+        }
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0ffe0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007b1e;
+    color: white;
+    padding: 10px 20px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav a, .dropbtn {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #21a121;
+    margin: 0 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.nav a:hover, .dropbtn:hover {
+    background-color: #009f00;
+}
+
+/* Dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 180px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Dropdown links */
+.dropdown-content a {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Hover effect on dropdown links */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+body {
+    animation: rotateIn 0.8s ease-in-out;
+}
+
+@keyframes rotateIn {
+    from {
+        transform: rotate(-10deg);
+        opacity: 0;
+    }
+    to {
+        transform: rotate(0);
+        opacity: 1;
+    }
+}
+
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="logo.png" alt="Tree Logo"> 
+    </div>
+    <nav>
+        <a href="chat1.html">Home</a>
+        <div class="dropdown">
+            <a href="#" class="dropbtn">About Us ▾</a>
+            <div class="dropdown-content">
+                <a href="chat4.html">About Foundation</a>
+                <a href="chat5.html">Our Mission</a>
+                <a href="chat8.html">Articles</a>
+                <a href="chat7.html">Community Led Intiatives</a>
+
+            </div>
+        </div>
+        <a href="chat6.html">Contact</a>
+        <a href="chat2.html">Profile</a>
+        <a href="#">Search</a>
+    </nav>
+</header>
+
+<main>
+    <h1>About the Foundation</h1>
+    <h2>One More Tree Foundation</h2>
+    <p>
+        The One More Tree Foundation was founded by two friends with the goal of planting one million trees in Poland and around the world.
+    </p>
+    <p>
+        We are a non-profit organisation that works to protect the environment and nature, support and promote environmental awareness 
+        and combat climate change. We are a young NGO that is in the process of implementing projects in which local governments across Poland are partners.
+    </p>
+
+    <div class="content">
+        <img src="seedling.jpg" alt="Planting Tree">
+
+        <div class="activity-box">
+            <h3>Our activity</h3>
+
+            <div class="activity-item">
+                <img src="015-forest-58x58.png" alt="Tree Icon">
+                <div>
+                    <strong>We plant trees</strong><br>
+                    Together with volunteers we try to turn the area green.
+                </div>
+            </div>
+
+            <div class="activity-item">
+                <img src="004-botanic.png" alt="Book Icon">
+                <div>
+                    <strong>We educate</strong><br>
+                    We organise workshops aimed at primary school students, during which we teach the youngest pro-environmental behaviour.
+                </div>
+            </div>
+
+            <div class="activity-item">
+                <img src="010-love.png" alt="Sustainability Icon">
+                <div>
+                    <strong>We support sustainable development</strong><br>
+                    Our aim is to engage companies in environmental activities. We want to support companies in their journey to reduce their carbon footprint.
+                </div>
+            </div>
+
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div>
+        <strong>One More Tree Foundation</strong><br>
+        Address: Aleja Zjednoczenia 17/U-1<br>
+        01-829 Warsaw<br>
+        Poland
+    </div>
+    <div>
+        Mobile:
+        Mobile: +48 883 622 887<br>
+        Email: info@one-more-tree.org
+    </div>
+    <div>
+        <a href="#"><img src="icons8-facebook-logo-50.png" alt="Facebook" width="20"></a>
+        <a href="#"><img src="icons8-twitter-logo-50.png" alt="Twitter" width="20"></a>
+        <a href="#"><img src="icons8-instagram-logo-30.png" alt="Instagram" width="20"></a>
+        <a href="#"><img src="icons8-linkedin-circled-50.png" alt="LinkedIn" width="20"></a>
+    </div>
+</footer>
+
+</body>
+</html>
